@@ -11,41 +11,37 @@
         <scene sceneID="sjx-cT-F0W">
             <objects>
                 <tableViewController id="W4q-qE-EWG" customClass="GameOfThronesTableViewController" customModule="AC3_2_GameOfThrones" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="103" sectionHeaderHeight="28" sectionFooterHeight="28" id="oAx-B9-1iZ">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="58" sectionHeaderHeight="28" sectionFooterHeight="28" id="oAx-B9-1iZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="gotVID" id="Gzx-2j-BOY" customClass="GOTEpisodeTableViewCell" customModule="AC3_2_GameOfThrones" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="375" height="103"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="gotVID" textLabel="OxU-Xl-1xl" detailTextLabel="9uw-g4-3Jw" style="IBUITableViewCellStyleSubtitle" id="Gzx-2j-BOY" customClass="GOTEpisodeTableViewCell" customModule="AC3_2_GameOfThrones" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="375" height="58"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Gzx-2j-BOY" id="jys-lM-aJJ">
-                                    <frame key="frameInset" width="375" height="102.5"/>
+                                    <frame key="frameInset" width="375" height="57"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aIX-JK-ca1">
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="OxU-Xl-1xl">
+                                            <frame key="frameInset" minX="15" minY="11" width="34" height="21"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Info Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zEY-pp-lCw">
-                                            <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="17"/>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9uw-g4-3Jw">
+                                            <frame key="frameInset" minX="15" minY="32" width="44" height="15"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
-                                    <constraints>
-                                        <constraint firstItem="aIX-JK-ca1" firstAttribute="leading" secondItem="jys-lM-aJJ" secondAttribute="leadingMargin" id="3CI-t9-SXC"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="aIX-JK-ca1" secondAttribute="trailing" id="GHK-qN-saC"/>
-                                        <constraint firstItem="aIX-JK-ca1" firstAttribute="top" secondItem="jys-lM-aJJ" secondAttribute="topMargin" id="NxI-Xz-V9a"/>
-                                        <constraint firstItem="zEY-pp-lCw" firstAttribute="trailing" secondItem="jys-lM-aJJ" secondAttribute="trailingMargin" id="Rcq-d8-4uh"/>
-                                        <constraint firstItem="zEY-pp-lCw" firstAttribute="top" secondItem="aIX-JK-ca1" secondAttribute="bottom" id="Vzv-R1-Ejl"/>
-                                        <constraint firstItem="zEY-pp-lCw" firstAttribute="leading" secondItem="jys-lM-aJJ" secondAttribute="leadingMargin" id="w51-9q-mJL"/>
-                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="detailLabel" destination="zEY-pp-lCw" id="AB0-0z-gCN"/>
-                                    <outlet property="titleLabel" destination="aIX-JK-ca1" id="YdY-T0-Byf"/>
+                                    <outlet property="detailLabel" destination="9uw-g4-3Jw" id="pep-1V-DlL"/>
+                                    <outlet property="titleLabel" destination="OxU-Xl-1xl" id="LbB-AY-wy2"/>
                                     <segue destination="5QO-dA-JiX" kind="show" identifier="detailSegue" id="fld-tX-HN6"/>
                                 </connections>
                             </tableViewCell>
