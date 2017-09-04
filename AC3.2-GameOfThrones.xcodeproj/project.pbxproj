@@ -16,9 +16,11 @@
 		9ED41AEC1DB0212600378593 /* GOTEpisode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED41AEB1DB0212600378593 /* GOTEpisode.swift */; };
 		9ED41AEE1DB120DD00378593 /* GOTEpisodeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED41AED1DB120DD00378593 /* GOTEpisodeTableViewCell.swift */; };
 		9EE38B561DB19D7600427F9E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE38B551DB19D7600427F9E /* DetailViewController.swift */; };
+		B04A0E82577F1D34EAD82C8F /* Pods_AC3_2_GameOfThrones.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CF40259204141DD9ACDB466 /* Pods_AC3_2_GameOfThrones.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F57C83905F91BB83156F269 /* Pods-AC3.2-GameOfThrones.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AC3.2-GameOfThrones.release.xcconfig"; path = "Pods/Target Support Files/Pods-AC3.2-GameOfThrones/Pods-AC3.2-GameOfThrones.release.xcconfig"; sourceTree = "<group>"; };
 		1EE6D1081DAD924D006EBDBF /* AC3.2-GameOfThrones.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AC3.2-GameOfThrones.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EE6D10B1DAD924D006EBDBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1EE6D1101DAD924D006EBDBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -27,9 +29,11 @@
 		1EE6D1171DAD924D006EBDBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1EE6D11D1DAD928B006EBDBF /* GameOfThronesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOfThronesTableViewController.swift; sourceTree = "<group>"; };
 		1EE6D11F1DAD9310006EBDBF /* got.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = got.json; sourceTree = "<group>"; };
+		9CF40259204141DD9ACDB466 /* Pods_AC3_2_GameOfThrones.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AC3_2_GameOfThrones.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9ED41AEB1DB0212600378593 /* GOTEpisode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GOTEpisode.swift; sourceTree = "<group>"; };
 		9ED41AED1DB120DD00378593 /* GOTEpisodeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GOTEpisodeTableViewCell.swift; sourceTree = "<group>"; };
 		9EE38B551DB19D7600427F9E /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		F5D902BD879BCF5E5BEA5184 /* Pods-AC3.2-GameOfThrones.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AC3.2-GameOfThrones.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AC3.2-GameOfThrones/Pods-AC3.2-GameOfThrones.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B04A0E82577F1D34EAD82C8F /* Pods_AC3_2_GameOfThrones.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +53,8 @@
 			children = (
 				1EE6D10A1DAD924D006EBDBF /* AC3.2-GameOfThrones */,
 				1EE6D1091DAD924D006EBDBF /* Products */,
+				72B0BA6A2441E0C343D5A4AE /* Pods */,
+				42D6781F3D82B08E8C043947 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +83,23 @@
 			path = "AC3.2-GameOfThrones";
 			sourceTree = "<group>";
 		};
+		42D6781F3D82B08E8C043947 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9CF40259204141DD9ACDB466 /* Pods_AC3_2_GameOfThrones.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		72B0BA6A2441E0C343D5A4AE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F5D902BD879BCF5E5BEA5184 /* Pods-AC3.2-GameOfThrones.debug.xcconfig */,
+				0F57C83905F91BB83156F269 /* Pods-AC3.2-GameOfThrones.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,9 +107,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1EE6D11A1DAD924D006EBDBF /* Build configuration list for PBXNativeTarget "AC3.2-GameOfThrones" */;
 			buildPhases = (
+				8ECFEBCE91FC96AA00CCCAE1 /* [CP] Check Pods Manifest.lock */,
 				1EE6D1041DAD924C006EBDBF /* Sources */,
 				1EE6D1051DAD924C006EBDBF /* Frameworks */,
 				1EE6D1061DAD924C006EBDBF /* Resources */,
+				CCB1511D56459D2FD5695694 /* [CP] Embed Pods Frameworks */,
+				790B0924747E15F69D4B9559 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -143,6 +170,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		790B0924747E15F69D4B9559 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AC3.2-GameOfThrones/Pods-AC3.2-GameOfThrones-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8ECFEBCE91FC96AA00CCCAE1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AC3.2-GameOfThrones-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CCB1511D56459D2FD5695694 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AC3.2-GameOfThrones/Pods-AC3.2-GameOfThrones-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AC3.2-GameOfThrones/Pods-AC3.2-GameOfThrones-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1EE6D1041DAD924C006EBDBF /* Sources */ = {
@@ -274,6 +355,7 @@
 		};
 		1EE6D11B1DAD924D006EBDBF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5D902BD879BCF5E5BEA5184 /* Pods-AC3.2-GameOfThrones.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "AC3.2-GameOfThrones/Info.plist";
@@ -286,6 +368,7 @@
 		};
 		1EE6D11C1DAD924D006EBDBF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F57C83905F91BB83156F269 /* Pods-AC3.2-GameOfThrones.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "AC3.2-GameOfThrones/Info.plist";

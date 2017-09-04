@@ -49,19 +49,19 @@ class GOTEpisode {
 	public func airdateInMMDDYYYY(for date: String) -> String {
 		var newDate = String()
 		let separatedDate = date.components(separatedBy: "-")
-		switch Int(separatedDate[1])! {
-		case 01: newDate += "January"
-		case 02: newDate += "February"
-		case 03: newDate += "March"
-		case 04: newDate += "April"
-		case 05: newDate += "May"
-		case 06: newDate += "June"
-		case 07: newDate += "July"
-		case 08: newDate += "August"
-		case 09: newDate += "September"
-		case 10: newDate += "October"
-		case 11: newDate += "November"
-		case 12: newDate += "December"
+		switch separatedDate[1] {
+		case "01": newDate += "January"
+		case "02": newDate += "February"
+		case "03": newDate += "March"
+		case "04": newDate += "April"
+		case "05": newDate += "May"
+		case "06": newDate += "June"
+		case "07": newDate += "July"
+		case "08": newDate += "August"
+		case "09": newDate += "September"
+		case "10": newDate += "October"
+		case "11": newDate += "November"
+		case "12": newDate += "December"
 		default:
 			return date
 		}

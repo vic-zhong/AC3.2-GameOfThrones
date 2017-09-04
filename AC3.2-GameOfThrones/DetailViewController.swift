@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class DetailViewController: UIViewController {
 	
@@ -17,29 +18,25 @@ class DetailViewController: UIViewController {
 	@IBOutlet weak var infoLabel: UILabel!
 	@IBOutlet weak var summaryLabel: UILabel!
 	
-	
-	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		loadData(for: selectedEpisode)
 		// Do any additional setup after loading the view.
 	}
 	
-	override func didReceiveMemoryWarning() {
-		super.didReceiveMemoryWarning()
-		// Dispose of any resources that can be recreated.
-	}
-	
 	func loadData(for episode: GOTEpisode) {
-		var image: UIImage?
+		
+        /*
+        Kingfisher'ed!
+        var image: UIImage?
 		var data: Data?
 		
 		//1. Create a url from the string of the url
-		let url = URL.init(string: episode.imageOriginal)
+		let url = URL(string: episode.imageOriginal)
 		
 		//2. Create a data object out of the url
 		if let unwrappedURL = url {
-			data = try? Data.init(contentsOf: unwrappedURL)
+			data = try? Data(contentsOf: unwrappedURL)
 		}
 		
 		//3. Create an image out of the data object created
@@ -48,7 +45,12 @@ class DetailViewController: UIViewController {
 		}
 		
 		self.imageView.image = image
-		self.titleLabel.text = episode.name
+        */
+        
+        let url = URL(string: episode.imageOriginal)
+        imageView.kf.setImage(with: url)
+		
+        self.titleLabel.text = episode.name
 		self.infoLabel.text = "Season \(episode.season), Episode \(episode.number)\nAired on \(episode.airdateInMMDDYYYY(for: episode.airdate))"
 		
 		let newSum = episode.summary.replacingOccurrences(of: "<[^>]+>", with: "", options: .regularExpression, range: nil)
